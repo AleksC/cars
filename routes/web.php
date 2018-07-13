@@ -20,3 +20,5 @@ Route::get('/', function () {
     $age = 44;
     return view('welcome', compact('name', 'age'));
 });
+
+Route::get('/cars', 'CarController@index');
